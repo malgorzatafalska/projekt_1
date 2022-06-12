@@ -1,0 +1,58 @@
+TCID,Tytuł,Warunki wstępne,ID Kroku,Opis kroku,Oczekiwany rezultat
+1,Członek drużyny nie może zaraportować błędów,"Aplikacja włączona, użytkownik zarejestrowany i zalogowany jako członek drużyny",1,Użytkownik znajduje błąd,
+,,,2,Próbuje go zaraportować,Możliwość zaraportowania błędu jest niemożliwa
+2,poprawne wyświetlanie aplikacji w zadanej rozdzielczości,mam otowrzoną aplikację oraz ustawienia systemowe,1,zmieniam ustawienia komputera - rozdzielczość monitora 1024x768,
+,,,2,"sprawdzam czy aplikacja ""mieści się"" w całośći na monitorze ","aplikacja jest wyświetlana na monitorze (bez skrolowania) ,dla rozdzielczości 1024x768"
+3,Tylko jedno zadanie testowe w wersji demonstracyjnej,Uruchomiona wersja demonstracyjna aplikacji,1,Rozpoczęcie rozwiązywania zadania,Zadanie jest rozpoczęte
+,,,2,Zakończenie zadania,Zadanie jest ukończone
+,,,3,Próba uruchomienia kolejnego zadania,Kolejne zadanie nie uruchamia się - Brak kolejnego zadania
+4,Sprawdzenie powtórzenia zadania z wersji demonstracyjnej w wersji końcowej,Uruchomiona aplikacja w wersji demonstracyjnej. Uruchomiona aplikacja w wersji końcowej. Użytkownik zalogowany w obu wersjach do aplikacji klienckiej.,1,Wyświetlenie listy dostępnych zadań w wersji demonstracyjnej. Wyświetlenie dostępnego zadania,
+,,,2,Wyświetlenie listy dostępnych zadań w wersji końcowej.,Powinno być jedno zadanie dostępne
+,,,3,Porównanie treści zadań z obu wersji,Wśród zadań z wersji końcowej nie powinno znaleźć się zadanie z wersji demonstracyjnej
+5,Możliwość ręcznego importu oraz eksportu danych,kl zalogowany do konta aplikacji ,,kliknięcie importuj dane do folderu ,
+,,,,kliknij eksport danych  z folderu ,prawidłowo zaimportowana lista plików z aplikacji oraz do aplikacji 
+6,Sprawdzenie ilości dostępnych zadań w części klienckiej aplikacji,klient zalogowany widzi przed soba liste aplikacji,1,krok 1: otwórz liste zadań ,
+,,,2,krok 1:spójrz czy posiada lista 15 zadań ,na liście dostępne są 15 zadań
+7,Wpisanie poprawnego hasła w wymaganej formie,"Uruchomienie programu MrBuggy w wymaganym środowisku Win, z wcześniej utworzonym loginem i hasłem",1.,wpisanie poprawnego loginu,
+,,,2.,wpisanie poprawnego hasła w wymaganej formie w odpowiednim polu,
+,,,3.,zalogowanie się do programu,Uruchomienie się programu
+8,Wpisywanie hasła podczas logowania  do aplikacji Mr Buggy3,"Komputer z systemem operacyjnym WIn7, Win 8/8.1",1,Otwórz aplikację,otworzenie aplikacji
+,,Zainstalowana aplikacja MrBuggy3,2,w Polu hasło wpisza hasło które zawiera mniej niż 8 znaków i kliknij dalej,informacja o zbyt małej ilości znaków
+,,,3,w Polu hasło wpisza hasło które nie zawiera małej litery i kliknij dalej,informacja o wymaganiach jakie musi spełaniać hasło
+,,,4,w Polu hasło wpisza hasło które nie zawiera dużej litery i kliknij dalej,informacja o wymaganiach jakie musi spełaniać hasło
+,,,5,w Polu hasło wpisza hasło które nie zawiera cyfry i kliknij dalej,informacja o wymaganiach jakie musi spełaniać hasło
+,,,6,w Polu hasło wpisza hasło które nie zawiera znaku specjalnego,informacja o wymaganiach jakie musi spełaniać hasło
+,,,7,"Wpisz hasło, które ma przynajmniej 8 znaków i zawiera jedną małą literę, jedną wielką literę, jedną cyfrę, jeden znak specjalny i kliknij dalej",akceptacja hasła i przejście do następnego kroku
+9,Aplikacja napisana w języku polskim ,"Otwarta przeglądarka, otwarta aplikacja",1,"1. Sprawdzenie polskich znaków, ortografii oraz klawiszy w intefejsie graficznym (w języku polskim)","Aplikacja napisana jest w języku polskim, nie ukazuje błędów ortograficznych oraz posiada prawidłowe polskie znaki "
+10,Prawidłowe wyświetlanie listy zadań i przycisków nawigacyjnych przy zadaniu 2-11,"Użytkownik ma otwartą aplikację aplikacje. Jest widoczne okno ""Zadania"" oraz ""Menu boczne"" po prawej stronie.",1,Użytkownik pozostaje na stronie startowej aplikacji,"W ""Menu bocznym"" wyświetla się lista zadań wraz z przyciskami nawigacyjnymi (""Następne"" / ""Poprzednie"")"
+,,"Użytkownik przeszedł do wybranego zadania poprzez klikanie przycisku ""Następne"" / ""Poprzednie""",2,Uzytkownik wybiera losowe zadanie (od 2 do 11),"Istnieje możliwość kliknięcia przycisku ""Następne"" oraz ""Poprzednie"""
+11,Oznaczenie kolorystyczne zadania,"Uruchomiona aplikacja, użytkownik zalogowany, wybrany tryb pracy, widoczna ""Lista zadań""",1,Wyświetlenie zadania,
+,,,2,Wybranie innego zadania,
+,,,3,Udzielenie odpowiedzi,Oznaczenie kolorystyczne wskazuje aktualnie wyświetlone zadanie a następnie zmienia się po udzieleniu odpowiedzi na kolor inny niż zadanie bez odpowiedzi
+12,"Tworzenie automatycznie kopii zapasowej po kliknięciu w przycisk ""zaraportuj"", w formie pliku","Uruchomiona aplikacja mr buggy, otworzone okno zadania",1,Klikam „zaraportuj defekt”,
+,,,2,Ponownie otwieram aplikację,Wczytany zostaje plik z kopią zapasową w formie pliku binarnego
+13,"Korzystanie z przycisków nawigacyjnych ""Następne"" i ""Poprzednie""","Uruchomiony komputer, włączony MR Buggy 3, użytkownik zalogowany",1,Uruchom pierwsze zadanie,
+,,,2,"Kliknij przycisk ""Następne""",
+,,,3,"Kliknij przycisk ""Poprzednie""",Użytkownik zostaje przeniesiony do następnego lub poprzedniego zadania używając przycisków nawigacyjnych
+14,Tworzenie kopii zapasowej po znalezieniu defektu,Aplikacja jest uruchomiona w trybie kapitana drużyny lub zawodnika indywidualnego,1,"Użytkownik klika przycisk ""Znalazłem defekt""",Utworzenie kopii zapasowej
+15,Zablokowanie konta po wpisaniu 3 błędnych haseł,Użytkownik nie zalogowany do aplikacji,1,"Wybierz tryb pracy, wpisz poprawny login oraz błędne hasło i spróbuj się zalogować. ",
+,,,2,Powtórz krok ID 1 jeszcze dwukrotnie.,
+,,,3,"Wybierz tryb pracy, wpisz poprawny login oraz poprawne hasło i spróbuj się zalogować. ",Po wpisaniu poprawnego hasła konto użytkownika jest zablokowane. 
+16.1,Poprawny czas przełączania pomiędzy zadaniami - przycisk z numerem zadania,"Zalogowany użytkownik, otwarte okno dowolnego zadania.",1,Kliknięcie przycisku numeru zadania innego niż zadanie bieżące.,Przełączenie do wybranego zadania w czasie niedłuższym niż 1 sekunda.
+16.2,"Poprawny czas przełączania pomiędzy zadaniami - przycisk ""Poprzednie""","Zalogowany użytkownik, otwarte okno zadania o numerze co najmniej 2.",1,"Kliknięcie przycisku ""Poprzednie""",Przełączenie do zadania poprzedzającego bieżące zadanie w czasie niedłuższym niż 1 sekunda.
+16.3,"Poprawny czas przełączania pomiędzy zadaniami - przycisk ""Następne""","Zalogowany użytkownik, otwarte okno zadania o numerze co najwyżej 14.",1,"Kliknięcie przycisku ""Następne""",Przełączenie do zadania następującego po bieżącym zadaniu w czasie niedłuższym niż 1 sekunda.
+17,sprawdzenie zużywanej pamięci operacyjnej przez aplikacje,uruchamiamy aplikacje ,1,uruchamiamy menadzer zadań,
+,,,2,przechodzimy do zakladki procesy,
+,,,3,swprawdzamy zużycie pamięci RAM,zużycie nie wieksze niż 100 MB
+18,Kontynuowanie pracy w aplikacji po utracie połączenia,"otwarta aplikacja, otwarte zadanie",1.,odłącz urządzenie od sieci,
+,,,2.,połącz urządzenie z siecią spowrotem ,"program wyświetla ten sam rezultat, który przed odłączeniem urządzenia od sieci. Dalsza edycja zadania jest możliwa, postępy nie zostały utracone"
+19,"Losowość zadań wyświetlanych w części klienckiej",poprawne zainstalowanie aplikacji w wersji klienckiej; przygotowanie kilku kont użytkownika (2),1,logujemy się na profil nr 1,"zadania wyświetlają się losowo u różnych użytkowników"
+,,,2,sprawdzamy po kolei treść wszystkich zadań,
+,,,3, logujemy się na profil 2,
+,,,4,sprawdzamy po kolei treśc wszystkich zadań,
+,,,5,"porównujemy, czy  kolejnosć i treść z poszczególnych zadań z logowania na profil 1 jest różna od tych z profilu 2",
+20,Poprawne wyświetlanie minut ,W aplikacji wejdz do pola czas ,1,sprawdź czy jest wyższa cyfra niż 59 w minutach,59 minuta jest najwyższą cyfrą  
+21,"W oknie ""Zadania"" wyświetla się nr zadania w polu ""Nr zadania""","Uruchomiona aplikacja Mr Buggy 3, zalogowany użytkownik",1,"1. Wybierz zadanie nr 1 z ""Lista zadań""","W polu ""Nr zadania"" powinien wyświetlić się numer wybranego zadania."
+22,3 Różne kolory w liście zadań,Uruchom Aplikację MrBuggy 3 ,1,kliknij podwójnie na ikonę aplikacji,Aplikacja sie uruchamia
+,,,2,jeśli żadne z zadań nie jest zrobione zrób jedno z zadań,Zrobione zadanie odznacza się osobnym kolorem (kolor#2)
+,,,3,zaznacz zadanie nie zrobione,zadanie zaznaczone odznacza się innym kolorem (kolor#3) niż zadanie zrobione i zadania nie zrobione (#1)
